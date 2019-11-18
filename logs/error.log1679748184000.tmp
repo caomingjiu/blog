@@ -1,0 +1,4 @@
+2019-11-13.10:52:32 ERROR [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:26  批量新增用户出现异常
+2019-11-13.10:54:06 ERROR [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:26  批量新增用户出现异常
+2019-11-13.10:54:32 ERROR [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:26  批量新增用户出现异常
+2019-11-13.10:55:28 ERROR [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:26  批量新增用户出现异常

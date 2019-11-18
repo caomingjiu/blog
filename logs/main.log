@@ -1,2 +1,12 @@
-2019-11-09.16:04:34 INFO  [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:21  批量新增用户成功
-2019-11-09.16:05:08 INFO  [main] com.niit.web.blog.dao.UserDaoTest.batchInsert:21  批量新增用户成功
+2019-11-14.20:30:25 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败
+2019-11-14.20:47:26 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败2
+2019-11-15.15:56:06 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:33  批量新增用户出现异常
+2019-11-15.16:09:33 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:11:15 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:13:32 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:16:05 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:25:17 INFO  [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:29  批量新增用户成功
+2019-11-15.16:27:29 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败2
+2019-11-15.16:28:40 INFO  [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:29  批量新增用户成功
+2019-11-15.16:29:39 INFO  [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:29  批量新增用户成功
+2019-11-15.16:31:35 INFO  [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:29  批量新增用户成功

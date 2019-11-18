@@ -1,0 +1,8 @@
+2019-11-14.20:30:25 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败
+2019-11-14.20:47:26 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败2
+2019-11-15.15:56:06 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:33  批量新增用户出现异常
+2019-11-15.16:09:33 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:11:15 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:13:32 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:16:05 ERROR [main] com.niit.web.blog.dao.ArticleDaoTest.batchInsert:32  批量新增用户出现异常
+2019-11-15.16:27:29 ERROR [main] com.niit.web.blog.util.JSoupSpider.lambda$getArticles$3:140  连接失败2

@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.niit.web.blog.dao.UserDao;
 import com.niit.web.blog.domain.UserDto;
+import com.niit.web.blog.entity.User;
 import com.niit.web.blog.factory.ServiceFactory;
 import com.niit.web.blog.filter.CorsFilter;
 import com.niit.web.blog.service.UserService;
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -29,7 +31,7 @@ import java.util.Map;
  * @Date 15:56 2019/11/9
  * @Version 1.0
  **/
-@WebServlet(urlPatterns = "/sign-in")
+@WebServlet(urlPatterns = {"/sign-in","/users"})
 public class UserController extends HttpServlet {
     private static Logger logger = LoggerFactory.getLogger(UserController.class);
     private UserService userService = ServiceFactory.getUserServiceInstance();
@@ -54,6 +56,25 @@ public class UserController extends HttpServlet {
             ro = ResponseObject.success(200, msg);
         }
         PrintWriter out = resp.getWriter();
+        out.print(gson.toJson(ro));
+        out.close();
+
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        UserService userService= ServiceFactory.getUserServiceInstance();
+        List<User> userList=userService.listUser();
+        Gson gson = new GsonBuilder().create();
+        ResponseObject ro =new ResponseObject();
+        ro.setCode(resp.getStatus());
+        if(resp.getStatus()==200){
+            ro.setMsg("请求成功");
+        }else {
+            ro.setMsg("请求失败");
+        }
+        ro.setData(userList);
+        PrintWriter out=resp.getWriter();
         out.print(gson.toJson(ro));
         out.close();
     }

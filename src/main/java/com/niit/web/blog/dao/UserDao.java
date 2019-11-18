@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface UserDao {
-    /**
+    /**II
      *
      * @param userList
      * @return
@@ -21,4 +21,18 @@ public interface UserDao {
      * @throws SQLException
      */
     User findUserByMobile(String mobile) throws SQLException;
+
+    /**
+     * 根据手机号查询文章
+     * @param mobile
+     * @return
+     * @throws SQLException
+     */
+    User findUserIntroduction(String mobile)throws SQLException;
+    /**
+     * 查看所有学生
+     * @return
+     * @throws SQLException
+     */
+    List<User> selectAll() throws SQLException;
 }
